@@ -37,5 +37,8 @@ TARGET_LD_SHIM_LIBS := /vendor/bin/mm-qcamera-daemon|vendor/lib/libshims_camera.
 # Security patch level
 VENDOR_SECURITY_PATCH := 2017-04-01
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
+
 # Inherit the proprietary files
 -include vendor/xiaomi/land/BoardConfigVendor.mk
